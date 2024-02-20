@@ -1,0 +1,72 @@
+# Snake Game
+
+This is a simple implementation of the classic Snake Game in Java using Swing. The game consists of a snake that moves around the screen and tries to eat randomly generated points to increase its length. The game ends if the snake collides with the screen borders or with itself.
+
+## Getting Started
+
+To run the Snake Game, follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/SnakeGame.git
+   ```
+
+2. **Compile and Run:**
+   ```bash
+   cd SnakeGame
+   javac SnakeGame.java
+   java SnakeGame
+   ```
+
+3. **Game Controls:**
+   - Use the arrow keys (Up, Down, Left, Right) to control the snake's direction.
+   - Try to eat the red points to increase your score.
+
+4. **Game Over:**
+   - The game ends when the snake collides with the screen borders or with itself.
+   - The final score is displayed on the game over screen.
+
+## Features
+
+- Simple and intuitive controls using arrow keys.
+- Randomly generated points for the snake to eat.
+- Score tracking and display.
+- Game over screen displaying the final score.
+
+## Code Structure
+
+The code is organized into the following components:
+
+- **SnakeGame.java:** The main class that initializes the game window and sets up the game panel.
+
+- **GamePanel.java:** The game panel class that extends `JPanel` and handles the game logic, drawing, and user input.
+
+- **MyKeyAdapter.java:** A nested class within `GamePanel` that extends `KeyAdapter` to handle key events for controlling the snake.
+
+## Customize the Game
+
+Feel free to customize the game by tweaking parameters, such as screen dimensions, unit size, delay, and colors. You can also add more features, levels, or graphics to enhance the game.
+
+```java
+// Example: Change screen dimensions
+static final int SCREEN_WIDTH = 800;
+static final int SCREEN_HEIGHT = 600;
+
+// Example: Change delay for faster or slower gameplay
+static final int DELAY = 100;
+
+// Example: Change colors
+g.setColor(Color.BLUE);
+g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+```
+
+## Dependencies
+
+This Snake Game uses Java Swing for the graphical user interface. No additional dependencies are required.
+
+## Acknowledgments
+
+- This implementation is based on the classic Snake Game concept.
+- Thanks to the Java Swing library for providing the necessary components for creating the graphical interface.
+
+Have fun playing the Snake Game! 🐍
