@@ -1,0 +1,68 @@
+# Tic-Tac-Toe Game
+
+This is a simple implementation of the classic Tic-Tac-Toe game in Java. The game allows two players to take turns marking spaces in a 3x3 grid, with the goal of getting three of their symbols in a row horizontally, vertically, or diagonally. The game ends when one player wins or when the board is full, resulting in a tie.
+
+## Getting Started
+
+To run the Tic-Tac-Toe game, follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/TicTacToeGame.git
+   ```
+
+2. **Compile and Run:**
+   ```bash
+   cd TicTacToeGame
+   javac TicTac_CoreCode.java
+   java TicTac_CoreCode
+   ```
+
+3. **Game Rules:**
+   - The game is played on a 3x3 grid.
+   - Players take turns marking empty spaces with 'X' or 'O'.
+   - The first player to get three of their symbols in a row wins.
+   - The game ends in a tie if the board is full and no player has won.
+
+## Features
+
+- Two-player game allowing players to take turns.
+- Simple console-based UI for ease of use.
+- Win and tie detection based on classic Tic-Tac-Toe rules.
+
+## Code Structure
+
+The code is organized into the following components:
+
+- **TicTac_CoreCode.java:** The main class containing the game logic, player turns, move validation, and win/tie detection.
+
+## Game Flow
+
+1. The game starts by displaying an empty 3x3 grid.
+2. Players take turns entering their moves.
+3. The game checks for a win or tie after each move.
+4. If a win or tie is detected, the game ends and the result is displayed.
+
+## Customize the Game
+
+Feel free to customize the game by modifying parameters, changing symbols, or adding additional features. You can also enhance the game by creating a graphical user interface or adding more advanced AI for the computer player.
+
+```java
+// Example: Change symbols
+placeMove(board, userInput, 'X'); // Player's symbol
+placeMove(board, Integer.toString(computerMove), 'O'); // Computer's symbol
+
+// Example: Customize the grid size (not recommended without code adjustments)
+char[][] customBoard = { { ' ', ' ', ' ' }, { ' ', ' ', ' ' }, { ' ', ' ', ' ' } };
+```
+
+## Dependencies
+
+This Tic-Tac-Toe game has no external dependencies. It is a simple console-based application.
+
+## Acknowledgments
+
+- This implementation is based on the classic Tic-Tac-Toe game concept.
+- Thanks to the simplicity of Java for creating an easy-to-understand console-based game.
+
+Enjoy playing Tic-Tac-Toe! 🎮
